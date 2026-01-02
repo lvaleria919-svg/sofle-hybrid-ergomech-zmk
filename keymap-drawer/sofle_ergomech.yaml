@@ -45,10 +45,10 @@ layers:
   - Sft+/
   - Sft+-
   - '-'
-  - +
+  - Sft+=
   - '='
   - ;
-  - ':'
+  - Sft+;
   - \
   - /
   - {t: ▽, type: trans}
