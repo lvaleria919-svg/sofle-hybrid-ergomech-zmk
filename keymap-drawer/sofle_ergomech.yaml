@@ -38,7 +38,7 @@ layers:
   - Sft+8
   - Sft+9
   - Sft+0
-  - Sft+\
+  - '|'
   - {t: ▽, type: trans}
   - '['
   - ']'
