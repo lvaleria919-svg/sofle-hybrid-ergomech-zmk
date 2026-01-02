@@ -34,22 +34,22 @@
             label = "default";
 
             // ------------------------------------------------------------------------------------------------------------
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  ESC  |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
+            // |  CAP  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   |   \   |
+            //               | ALT |  [   |  ]   | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | SCH   | GUI  |
 
             bindings = <
 &kp GRAVE   &kp N1    &kp N2    &kp N3     &kp N4     &kp N5   &kp N6     &kp N7     &kp N8        &kp N9    &kp N0    &kp ESC
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T    &kp Y      &kp U      &kp I         &kp O     &kp P     &kp BSPC
 &kp CAPSLOCK     &kp A     &kp S     &kp D      &kp F      &kp G    &kp H      &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B    &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp BSLH
+&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B    &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp SLASH
 &kp C_MUTE  &kp LALT  &kp LBKT  &kp RBKT  &mo LOWER  &kp SPACE  &kp RET  &mo RAISE  &kp RCTRL     &kp LG(LS(N4))  &kp RGUI
-                                                               &kp C_SLEEP  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(LEFT)  &kp LC(DOWN)
+                                                               &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&mousescroll &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -60,16 +60,16 @@
             // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
             // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-            // |       |  [  |  ]  |  ?   |  _   |   -  |        |  |       |  +   |  =    |  ;    |  :   |   \   |   /   |
+            // |       |  {  |  }  |  =   |  _   |  -   |        |  |       |  +   |  =    |  ;    |  :   |   \   |       |
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
 &studio_unlock     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp F12
-&trans     &kp LS(1)  &kp LS(2)  &kp LS(3)  &kp DLLR  &kp LS(5)  &kp LS(6)  &kp LS(7)  &kp LS(8)  &kp LS(9)  &kp LS(0)  &kp PIPE
-&trans     &kp LBKT   &kp RBKT   &kp LS(SLASH) &kp LS(MINUS)  &kp MINUS  &kp PLUS  &kp EQUAL &kp SEMI   &kp LS(SEMI)  &kp BSLH &kp SLASH
+&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &kp PIPE
+&trans     &kp LBRC  &kp RBRC  &kp EQUAL  &kp LS(MINUS)  &kp MINUS   &kp PLUS   &kp EQUAL  &kp SEMI   &kp COLON  &kp BSLH  &trans
 &trans     &trans     &trans     &trans    &trans    &trans     &trans     &trans    &trans     &trans     &trans
-                                                                &kp ENTER  &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
+                                                                &kp A      &kp B     &kp C      &kp D      &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -94,7 +94,7 @@
                                                                                   &kp A      &kp B     &kp C     &kp D      &kp E
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
