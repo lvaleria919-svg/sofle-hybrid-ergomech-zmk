@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ESC, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, CAPSLOCK, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, N, M, ',', ., /, \, MUTE, LALT, '[', ']', lower, SPACE, RET, raise, RCTRL, Gui+Sft+4, RGUI, SLEEP, Ctl+RIGHT, Ctl+UP, Ctl+LEFT, Ctl+DOWN]
+    Z, X, C, V, B, N, M, ',', ., /, /, MUTE, LALT, '[', ']', lower, SPACE, RET, raise, RCTRL, Gui+Sft+4, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
   lower:
   - '&studio_unlock'
   - F1
@@ -28,29 +28,29 @@ layers:
   - '0'
   - F12
   - {t: ▽, type: trans}
-  - Sft+1
-  - Sft+2
-  - Sft+3
+  - '!'
+  - '@'
+  - '#'
   - $
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+0
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - '|'
   - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - Sft+/
+  - '{'
+  - '}'
+  - '='
   - Sft+-
   - '-'
   - +
   - '='
   - ;
-  - Sft+;
+  - ':'
   - \
-  - /
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -62,11 +62,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
-  - '&mmv MOVE_RIGHT'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
+  - A
+  - B
+  - C
+  - D
+  - E
   raise:
   - BT CLR
   - {t: BT, h: '0'}
