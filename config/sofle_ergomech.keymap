@@ -66,7 +66,7 @@
             bindings = <
 &studio_unlock     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp F12
-&trans     &kp LS(1)  &kp LS(2)  &kp LS(3)  &kp DLR  &kp LS(5)  &kp LS(6)  &kp LS(7)  &kp LS(8)  &kp LS(9)  &kp LS(0)  &kp PIPE
+&trans     &kp LS(1)  &kp LS(2)  &kp LS(3)  &kp DLLR  &kp LS(5)  &kp LS(6)  &kp LS(7)  &kp LS(8)  &kp LS(9)  &kp LS(0)  &kp PIPE
 &trans     &kp LBKT   &kp RBKT   &kp LS(SLASH) &kp LS(MINUS)  &kp MINUS  &kp LS(EQUAL)  &kp EQUAL &kp SEMI   &kp LS(SEMI)  &kp BSLH &kp SLASH
 &trans     &trans     &trans     &trans    &trans    &trans     &trans     &trans    &trans     &trans     &trans
                                                                 &kp ENTER  &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
