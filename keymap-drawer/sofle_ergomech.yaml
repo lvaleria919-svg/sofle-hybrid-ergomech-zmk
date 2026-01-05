@@ -63,10 +63,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - A
-  - B
-  - C
-  - D
-  - E
+  - Ctl+RIGHT
+  - Ctl+UP ARROW
+  - Ctl+LEFT
+  - Ctl+DOWN
   raise:
   - BT CLR
   - {t: BT, h: '0'}
