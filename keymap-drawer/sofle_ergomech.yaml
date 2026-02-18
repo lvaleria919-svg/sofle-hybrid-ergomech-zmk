@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ESC, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, CAPSLOCK, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ESC, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
     Z, X, C, V, B, N, M, ',', ., /, \, MUTE, LALT, '[', ']', lower, SPACE, RET, raise, RCTRL, Gui+Sft+4, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
   lower:
   - '&studio_unlock'
@@ -40,9 +40,9 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - '{'
-  - '}'
-  - '='
+  - SLEEP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Sft+-
   - '-'
   - +
@@ -62,7 +62,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
+  - ENTER
   - Ctl+RIGHT
   - Ctl+UP ARROW
   - Ctl+LEFT
@@ -127,11 +127,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - MUTE
+  - NEXT
+  - PLAY
+  - PREV
+  - PAUSE
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
