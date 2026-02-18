@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - sofle_hybrid_rgb_rev5
+      - stuff-that-worked
   workflow_dispatch:
 
 permissions:
